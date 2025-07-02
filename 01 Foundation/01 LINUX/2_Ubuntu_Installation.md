@@ -114,7 +114,7 @@ RAID confuses Ubuntu; AHCI ensures Linux sees your disk correctly!
 ```bash
 sudo apt update && sudo apt upgrade  
 sudo ubuntu-drivers autoinstall
-``` |
+```
 
 ---
 
