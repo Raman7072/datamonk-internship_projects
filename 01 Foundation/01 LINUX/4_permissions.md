@@ -56,11 +56,11 @@ Example:
 -rw-r--r--  user group  myfile.txt
 drwxr-xr-x  user group  mydirectory/
 ```
--: Regular file, d: Directory
-rw-: Owner can read/write
-r--: Group and others can read
+`-`: Regular file, `d`: Directory
+`rw-`: Owner can read/write
+`r--`: Group and others can read
 
-## 🔧 Changing Permissions with chmod
+## 🔧 Changing Permissions with `chmod`
 ### Symbolic mode:
 ```bash
 chmod u+x script.sh        # Add execute for owner
@@ -81,7 +81,7 @@ chmod 644 file.txt  # rw-r--r--
 chmod 777 file.txt  # rwxrwxrwx (not recommended)
 ```
 
-## 👥 Changing Ownership with chown
+## 👥 Changing Ownership with `chown`
 ```bash
 chown user file.txt             # Change owner
 chown :group file.txt           # Change group
@@ -89,7 +89,7 @@ chown user:group file.txt       # Change both
 chown -R user directory/        # Recursive ownership
 ```
 
-## ⚠️ Using sudo: Elevated Privileges
+## ⚠️ Using `sudo`: Elevated Privileges
 ### Run admin commands:
 ```bash
 sudo apt update                 # Update system packages
@@ -98,7 +98,7 @@ sudo systemctl restart apache2 # Restart service
 **🔐 Why doesn’t the terminal show password characters when typing?**
 For security, Linux hides password input—just type and press Enter.
 
-## 👤 Adding Users with useradd
+## 👤 Adding Users with `useradd`
 ```bash
 sudo useradd -m newuser       # Create user + home dir
 sudo passwd newuser           # Set password
@@ -106,15 +106,15 @@ sudo passwd newuser           # Set password
 **🧠 Why learn this?** Even if you don’t manage users daily, understanding user access is key for secure systems.
 
 ## 🧪 Exercises (Do it yourself!)
-- Use ls -l, chmod, chown, and sudo.
+- Use `ls -l`, `chmod`, `chown` and `sudo`.
 - Create files and directories.
 - Set different permissions using symbolic and octal modes.
 - Make a script file executable and run it.
-- Change ownership with chown.
+- Change ownership with `chown`.
 
 **💡 What’s the default permission for a new file and directory?**
-- File: rw-r--r--
-- Directory: rwxr-xr-x
+- File: `rw-r--r--`
+- Directory: `rwxr-xr-x`
 
 ## ✅ Knowledge Check – Quick Q&A
 
