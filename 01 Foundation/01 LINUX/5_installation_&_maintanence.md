@@ -142,5 +142,3 @@ You've just leveled up your Linux toolkit! 💪
 With practice, these commands and utilities will become second nature and drastically improve your development workflow.
 
 Happy hacking! 🚀
-
-```
