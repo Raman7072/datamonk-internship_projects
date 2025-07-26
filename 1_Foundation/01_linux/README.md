@@ -1,2 +1,3 @@
+# PROJECTS
 - neofetch
-![neofetch](https://github.com/Raman7072/Internship/blob/main/01%20Foundation/01%20LINUX/neofetch.png)
+![neofetch](https://github.com/Raman7072/datamonk-internship_projects/blob/main/1_Foundation/01_linux/neofetch.png)
