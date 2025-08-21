@@ -72,7 +72,8 @@ Branching is one of Git’s most powerful features because it:
 - Supports easy collaboration
 - Lets you experiment freely
 
-🔹 Practice Exercise (Try This!)
+## 🔹 Practice Exercise (Try This!)
+
 1. Create a new branch `experiment-layout`.
 2. Switch to it and make **two commits**.
 3. Create another branch from `main` called `add-license` and add a `LICENSE.txt` file with a commit.
