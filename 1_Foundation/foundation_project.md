@@ -19,7 +19,7 @@
 4. Access app at `http://<EC2-IP>:5000`
 
 ## Screenshots
-- File upload
-- File listing
-- S3 view
+- File upload ![](https://github.com/Raman7072/datamonk-internship_projects/blob/main/1_Foundation/google-drive-clone/GCC2.png)
+- File listing 
+- S3 view ![](https://github.com/Raman7072/datamonk-internship_projects/blob/main/1_Foundation/google-drive-clone/GCC1.png)
 - EC2 container
