@@ -19,7 +19,18 @@
 4. Access app at `http://<EC2-IP>:5000`
 
 ## Screenshots
-- File upload ![](https://github.com/Raman7072/datamonk-internship_projects/blob/main/1_Foundation/google-drive-clone/GCC2.png)
-- File listing ![](https://github.com/Raman7072/datamonk-internship_projects/blob/main/1_Foundation/google-drive-clone/GCC3.png)
-- S3 view ![](https://github.com/Raman7072/datamonk-internship_projects/blob/main/1_Foundation/google-drive-clone/GCC1.png)
-- EC2 container ![](https://github.com/Raman7072/datamonk-internship_projects/blob/main/1_Foundation/google-drive-clone/Google%20Cloud%20Clone.webm)
+- File upload
+![](https://github.com/Raman7072/datamonk-internship_projects/blob/main/1_Foundation/google-drive-clone/GCC2.png)
+---
+- File listing
+![](https://github.com/Raman7072/datamonk-internship_projects/blob/main/1_Foundation/google-drive-clone/GCC3.png)
+---
+- S3 view
+![](https://github.com/Raman7072/datamonk-internship_projects/blob/main/1_Foundation/google-drive-clone/GCC1.png)
+---
+- EC2 container
+<iframe width="560" height="315" 
+src="https://www.youtube.com/embed/abcdefghhttps://github.com/Raman7072/datamonk-internship_projects/blob/main/1_Foundation/google-drive-clone/Google%20Cloud%20Clone.webm" 
+frameborder="0" allowfullscreen></iframe>
+
+![](https://github.com/Raman7072/datamonk-internship_projects/blob/main/1_Foundation/google-drive-clone/Google%20Cloud%20Clone.webm)
