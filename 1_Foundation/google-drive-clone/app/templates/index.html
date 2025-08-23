@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>KAKAROT Drive</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="logo">☁️ KAKAROT</div>
+        <nav>
+            <a href="#" class="active">🏠 Home</a>
+            <a href="#upload">⬆ Upload</a>
+            <a href="#files">📂 Files</a>
+            <a href="#">⚙️ Settings</a>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main">
+        <!-- Topbar -->
+        <header class="topbar">
+            <input type="text" id="search" placeholder="🔍 Search files...">
+            <div class="profile">👤 User</div>
+        </header>
+
+        <main class="content">
+            <!-- Upload Section -->
+            <section id="upload" class="upload-box">
+                <h2>Upload File</h2>
+                <form id="uploadForm">
+                    <input type="file" id="fileInput" required>
+                    <button type="submit">Upload</button>
+                </form>
+            </section>
+
+            <!-- Files Section -->
+            <section id="files" class="files-grid">
+                <h2>Your Files</h2>
+                <div id="fileList" class="grid"></div>
+            </section>
+        </main>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+
+</html>
