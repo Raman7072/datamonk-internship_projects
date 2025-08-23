@@ -20,6 +20,6 @@
 
 ## Screenshots
 - File upload ![](https://github.com/Raman7072/datamonk-internship_projects/blob/main/1_Foundation/google-drive-clone/GCC2.png)
-- File listing 
+- File listing ![](https://github.com/Raman7072/datamonk-internship_projects/blob/main/1_Foundation/google-drive-clone/GCC3.png)
 - S3 view ![](https://github.com/Raman7072/datamonk-internship_projects/blob/main/1_Foundation/google-drive-clone/GCC1.png)
-- EC2 container
+- EC2 container 
