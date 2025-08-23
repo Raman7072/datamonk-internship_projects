@@ -31,8 +31,7 @@
 - EC2 container
 
 <iframe width="560" height="315" 
-  src="https://github.com/Raman7072/datamonk-internship_projects/blob/main/1_Foundation/google-drive-clone/    Google%20Cloud%20Clone.webm" 
-  frameborder="0" allowfullscreen>
+  src="https://github.com/Raman7072/datamonk-internship_projects/blob/main/1_Foundation/google-drive-clone/GCC.webm" frameborder="0" allowfullscreen>
 </iframe>
 
-![](https://github.com/Raman7072/datamonk-internship_projects/blob/main/1_Foundation/google-drive-clone/Google%20Cloud%20Clone.webm)
+![](https://github.com/Raman7072/datamonk-internship_projects/blob/main/1_Foundation/google-drive-clone/GCC.webm)
