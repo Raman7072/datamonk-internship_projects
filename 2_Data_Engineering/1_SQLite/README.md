@@ -1,7 +1,7 @@
 ![](https://github.com/Raman7072/datamonk-internship_projects/blob/main/2_Data_Engineering/1_SQLite/screenshots/sql0.png)
 
 ---
-# Observantion
+# 🕵️ The Case of the Slowdown: A SQLite Mystery
 
 ![](https://github.com/Raman7072/datamonk-internship_projects/blob/main/2_Data_Engineering/1_SQLite/screenshots/sql1.png)
 
