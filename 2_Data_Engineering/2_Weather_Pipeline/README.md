@@ -54,3 +54,9 @@ A modular ETL pipeline that fetches hourly historical weather for Indian cities 
 - We use `INSERT OR IGNORE` for de-duping hourly data.
 - We use `UPSERT (ON CONFLICT)` to refresh aggregates in `daily_weather` and `global_weather`.
 - If you change DB filename, pass it as the 3rd CLI argument in `main.py` or adjust scripts accordingly.
+---
+
+![](https://github.com/Raman7072/datamonk-internship_projects/blob/main/2_Data_Engineering/2_Weather_Pipeline/screenshot/etl1.png)
+
+---
+![](https://github.com/Raman7072/datamonk-internship_projects/blob/main/2_Data_Engineering/2_Weather_Pipeline/screenshot/etl2.png)
