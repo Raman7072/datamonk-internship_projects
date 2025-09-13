@@ -61,11 +61,11 @@ Includes a correlated subquery computing **total spend per customer per film**.
 - Rental date  
 - Customer’s total spend for that film  
 
-![](https://github.com/Raman7072/datamonk-internship_projects/blob/main/2_Data_Engineering/4_duckdb/screenshots/1.png)
+![](screenshots/1.png)
 
 ---
 
-![](https://github.com/Raman7072/datamonk-internship_projects/blob/main/2_Data_Engineering/4_duckdb/screenshots/1a.png)
+![](screenshots/1a.png)
 
 
 ---
@@ -75,7 +75,7 @@ Two implementations provided:
 - **Window function (ROW_NUMBER)**  
 - **Correlated subquery**  
 
-![](https://github.com/Raman7072/datamonk-internship_projects/blob/main/2_Data_Engineering/4_duckdb/screenshots/1b.png)
+![](screenshots/1b.png)
 
 ---
 
@@ -88,7 +88,7 @@ COPY (
 
 Generated file: **[`sakila_insights.csv`](sakila_insights.csv)**
 
-![](https://github.com/Raman7072/datamonk-internship_projects/blob/main/2_Data_Engineering/4_duckdb/screenshots/1c.png)
+![](screenshots/1c.png)
 
 
 ---
@@ -105,39 +105,46 @@ con.execute("SELECT * FROM 'sakila_insights.csv' LIMIT 10").df()
 
 ### 1. **Top 5 films by revenue**
 
-![](https://github.com/Raman7072/datamonk-internship_projects/blob/main/2_Data_Engineering/4_duckdb/screenshots/2a.png)
+![](screenshots/2a.png)
 
 ---
 ### 2. **Unique customers per category**
 
-![](https://github.com/Raman7072/datamonk-internship_projects/blob/main/2_Data_Engineering/4_duckdb/screenshots/2b.png)
+![](screenshots/2b.png)
 
 
 ---
 ### 3. **Action films above category average revenue**
 
-![](https://github.com/Raman7072/datamonk-internship_projects/blob/main/2_Data_Engineering/4_duckdb/screenshots/2c.png)
+![](screenshots/2c.png)
 
 ---
 ### 4. **Histogram buckets of total revenue (<$10, $10–$50, >$50)**
 
-![](https://github.com/Raman7072/datamonk-internship_projects/blob/main/2_Data_Engineering/4_duckdb/screenshots/2e.png)
+![](screenshots/2e.png)
 
 
 ---
 
-## 📝 Write-up
+## Write-up: Working with Sakila in DuckDB
 
-Exporting to CSV **flattened the normalized schema** into a single denormalized dataset.  
-This simplified downstream queries (no joins required), but required extra care to avoid **double-counting** revenues if multiple rentals existed.  
+Exporting Sakila query results into a CSV fundamentally changed the way I approached the analysis.  
+In the relational database, I relied on normalized joins (e.g., rental → payment → inventory → film) to compute insights.  
+Once exported to CSV, the dataset became **denormalized** — all necessary fields (film, category, customer, store, spend) were pre-joined.  
+This meant subsequent queries focused only on aggregation and filtering, without re-joining multiple tables.  
+It simplified the logic, but also required care to avoid double-counting customer-film totals.
 
-**Benefits:**  
-- CSVs are portable, lightweight, and queryable directly in DuckDB.  
-- No schema migration needed for quick analysis.  
+**Benefits of CSV in DuckDB:**
+- Extremely portable and easy to share.
+- Can be queried directly without importing, enabling instant exploration.
+- Works seamlessly with DuckDB’s SQL engine.
 
-**Limitations:**  
-- CSV lacks strict typing and schema enforcement.  
-- Not as efficient as Parquet for large analytical workloads.  
-- Once flattened, relational detail is lost.  
+**Limitations:**
+- No schema enforcement (string vs numeric types may need casting).
+- Larger storage footprint and slower scan vs columnar formats like Parquet.
+- Loss of normalized structure — once exported, you can’t re-join to related tables unless you export them too.
+
+Overall, the CSV workflow was great for lightweight analysis and portability, while the normalized Sakila DB remains more powerful for complex relational queries.
+
 
 ---
