@@ -43,7 +43,7 @@ SHOW TABLES;
 You’ll see tables like:
 `actor, customer, film, rental, payment, store, category, inventory`, etc.
 
-![](https://github.com/Raman7072/datamonk-internship_projects/blob/main/2_Data_Engineering/4_duckdb/screenshots/0.png)
+![](screenshots/0.png)
 
 ---
 
@@ -103,26 +103,26 @@ con = duckdb.connect()
 con.execute("SELECT * FROM 'sakila_insights.csv' LIMIT 10").df()
 ```
 
-### Example Queries
-1. **Top 5 films by revenue**
+### 1. **Top 5 films by revenue**
 
 ![](https://github.com/Raman7072/datamonk-internship_projects/blob/main/2_Data_Engineering/4_duckdb/screenshots/2a.png)
 
 ---
-2. **Unique customers per category**
+### 2. **Unique customers per category**
 
 ![](https://github.com/Raman7072/datamonk-internship_projects/blob/main/2_Data_Engineering/4_duckdb/screenshots/2b.png)
 
 
 ---
-3. **Action films above category average revenue**
+### 3. **Action films above category average revenue**
 
 ![](https://github.com/Raman7072/datamonk-internship_projects/blob/main/2_Data_Engineering/4_duckdb/screenshots/2c.png)
 
 ---
-4. **Histogram buckets of total revenue (<$10, $10–$50, >$50)**
+### 4. **Histogram buckets of total revenue (<$10, $10–$50, >$50)**
 
-📄 See: [`notebooks/sakila_duckdb_analysis.ipynb`](notebooks/sakila_duckdb_analysis.ipynb)
+![](https://github.com/Raman7072/datamonk-internship_projects/blob/main/2_Data_Engineering/4_duckdb/screenshots/2e.png)
+
 
 ---
 
@@ -139,28 +139,5 @@ This simplified downstream queries (no joins required), but required extra care 
 - CSV lacks strict typing and schema enforcement.  
 - Not as efficient as Parquet for large analytical workloads.  
 - Once flattened, relational detail is lost.  
-
----
-
-## 📂 Project Structure
-```
-data_eng/
-├── sql/
-│   ├── part1_join_and_export.sql
-│   ├── top3_customers_per_country.sql
-├── sakila_insights.csv
-├── notebooks/
-│   └── sakila_duckdb_analysis.ipynb
-└── README.md
-```
-
----
-
-## 🚀 How to Run
-1. Clone this repository.
-2. Follow **Setup** steps above to attach Sakila DB.
-3. Run SQL scripts inside DuckDB shell.
-4. Generate `sakila_insights.csv` using the `COPY` command.
-5. Open the Jupyter notebook and run CSV-only queries.
 
 ---
