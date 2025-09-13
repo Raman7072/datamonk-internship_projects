@@ -43,6 +43,8 @@ SHOW TABLES;
 You’ll see tables like:
 `actor, customer, film, rental, payment, store, category, inventory`, etc.
 
+![](https://github.com/Raman7072/datamonk-internship_projects/blob/main/2_Data_Engineering/4_duckdb/screenshots/0.png)
+
 ---
 
 ## 🧩 Part 1 – Complex Queries on Sakila
@@ -59,7 +61,12 @@ Includes a correlated subquery computing **total spend per customer per film**.
 - Rental date  
 - Customer’s total spend for that film  
 
-📄 See: [`sql/part1_join_and_export.sql`](sql/part1_join_and_export.sql)
+![](https://github.com/Raman7072/datamonk-internship_projects/blob/main/2_Data_Engineering/4_duckdb/screenshots/1.png)
+
+---
+
+![](https://github.com/Raman7072/datamonk-internship_projects/blob/main/2_Data_Engineering/4_duckdb/screenshots/1a.png)
+
 
 ---
 
@@ -68,7 +75,7 @@ Two implementations provided:
 - **Window function (ROW_NUMBER)**  
 - **Correlated subquery**  
 
-📄 See: [`sql/top3_customers_per_country.sql`](sql/top3_customers_per_country.sql)
+![](https://github.com/Raman7072/datamonk-internship_projects/blob/main/2_Data_Engineering/4_duckdb/screenshots/1b.png)
 
 ---
 
@@ -80,6 +87,9 @@ COPY (
 ```
 
 Generated file: **[`sakila_insights.csv`](sakila_insights.csv)**
+
+![](https://github.com/Raman7072/datamonk-internship_projects/blob/main/2_Data_Engineering/4_duckdb/screenshots/1c.png)
+
 
 ---
 
@@ -95,8 +105,21 @@ con.execute("SELECT * FROM 'sakila_insights.csv' LIMIT 10").df()
 
 ### Example Queries
 1. **Top 5 films by revenue**
+
+![](https://github.com/Raman7072/datamonk-internship_projects/blob/main/2_Data_Engineering/4_duckdb/screenshots/2a.png)
+
+---
 2. **Unique customers per category**
+
+![](https://github.com/Raman7072/datamonk-internship_projects/blob/main/2_Data_Engineering/4_duckdb/screenshots/2b.png)
+
+
+---
 3. **Action films above category average revenue**
+
+![](https://github.com/Raman7072/datamonk-internship_projects/blob/main/2_Data_Engineering/4_duckdb/screenshots/2c.png)
+
+---
 4. **Histogram buckets of total revenue (<$10, $10–$50, >$50)**
 
 📄 See: [`notebooks/sakila_duckdb_analysis.ipynb`](notebooks/sakila_duckdb_analysis.ipynb)
