@@ -1,6 +1,0 @@
-ANALYZE people;
-ANALYZE jobs;
-
-
-EXPLAIN ANALYZE
-SELECT city, COUNT(*) FROM people GROUP BY city;
