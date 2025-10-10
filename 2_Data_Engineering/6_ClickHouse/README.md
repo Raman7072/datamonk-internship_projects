@@ -5,7 +5,7 @@ Repository for DataMonk Internship Project
 ### Exercise 1 — Create Two Tables: With and Without Codecs
 
 1. Create Table A (with codecs):
-
+![](module1/exercise1/1.png)
 
 ---
 
