@@ -7,42 +7,50 @@ Repository for DataMonk Internship Project
 1. Create Table A (with codecs):
 
 ![](module1/exercise1/1.png)
+
 ---
 
 2. Create Table B (without codecs):
 
 ![](module1/exercise1/2.png)
+
 ---
 
 3. Insert 1 million rows:
 
-![](module1/exercise1/3.png)
-![](module1/exercise1/4.png)
+![](module1/exercise1/3.1.png)
+![](module1/exercise1/3.2.png)
+
 ---
 
 4. Check sizes:
 
-![](module1/exercise1/5.png)
+![](module1/exercise1/4.png)
+
 ---
 
 5. Check row counts:
 
-![](module1/exercise1/6.png)
+![](module1/exercise1/5.png)
+
 ---
 
 ### Exercise 2 — Guess the Best Codec
 1. Create tables for testing codecs:
 
-![](module1/exercise1/1.png)
+![](module1/exercise2/1.png)
+
 ---
 
 2. Insert data:
 
-![](module1/exercise1/1.png)
+![](module1/exercise2/2.png)
+
 ---
 
 3. Compare disk usage:
 
+![](module1/exercise2/3.png)
 
 ---
 
@@ -72,36 +80,43 @@ Repository for DataMonk Internship Project
 ### Exercise 4 — Experiment with ReplacingMergeTree
 1. Create table:
 
+![](module3/exercise4/1.png)
 
 ---
 
 2. Insert duplicates:
 
+![](module3/exercise4/2.png)
 
 ---
 
 3. Check before merge:
 
+![](module3/exercise4/3.png)
 
 ---
 
 4. Trigger merge:
 
+![](module3/exercise4/4.png)
 
 ---
 
 5. Check after merge:
 
+![](module3/exercise4/5.png)
 
 ---
 
 ### Exercise 5 — Write a Vectorized Query
 1. Insert data:
 
+![](module3/exercise5/1.png)
 
 ---
 
 2. Run aggregation:
 
+![](module3/exercise5/2.png)
 
 ---
