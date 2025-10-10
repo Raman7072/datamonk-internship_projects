@@ -5,38 +5,40 @@ Repository for DataMonk Internship Project
 ### Exercise 1 — Create Two Tables: With and Without Codecs
 
 1. Create Table A (with codecs):
-![](module1/exercise1/1.png)
 
+![](module1/exercise1/1.png)
 ---
 
 2. Create Table B (without codecs):
 
-
+![](module1/exercise1/2.png)
 ---
 
 3. Insert 1 million rows:
 
-
+![](module1/exercise1/3.png)
+![](module1/exercise1/4.png)
 ---
 
 4. Check sizes:
 
-
+![](module1/exercise1/5.png)
 ---
 
 5. Check row counts:
 
-
+![](module1/exercise1/6.png)
 ---
+
 ### Exercise 2 — Guess the Best Codec
 1. Create tables for testing codecs:
 
-
+![](module1/exercise1/1.png)
 ---
 
 2. Insert data:
 
-
+![](module1/exercise1/1.png)
 ---
 
 3. Compare disk usage:
