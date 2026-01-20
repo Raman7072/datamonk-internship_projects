@@ -73,3 +73,6 @@ The pipeline recreates the earlier SQL-based ETL using a modern lakehouse archit
 ![](screenshots/6.png)
   
 ![](screenshots/7.png)
+
+![](screenshots/8.png)
+
