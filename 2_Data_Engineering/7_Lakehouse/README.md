@@ -50,9 +50,20 @@ The pipeline recreates the earlier SQL-based ETL using a modern lakehouse archit
 - Metadata pruning minimizes IO during filtered queries
 
 ---
-
+![](screenshots/1.png)
 ## Screenshots
 - Appending multiple versions
+![](screenshots/2.png)
+  
 - Time travel comparisons
+![](screenshots/3.png)
+  
 - City-based filtering
+![](screenshots/4.png)
+  
 - Overwrite before/after comparison
+![](screenshots/5.png)
+
+![](screenshots/6.png)
+  
+![](screenshots/7.png)
