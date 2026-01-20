@@ -9,6 +9,10 @@ The pipeline recreates the earlier SQL-based ETL using a modern lakehouse archit
 
 ---
 
+![](screenshots/8.png)
+
+---
+
 ## Steps Performed
 
 ### 1. Load Hourly Weather Data
@@ -74,5 +78,4 @@ The pipeline recreates the earlier SQL-based ETL using a modern lakehouse archit
   
 ![](screenshots/7.png)
 
-![](screenshots/8.png)
 
