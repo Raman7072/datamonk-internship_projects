@@ -61,3 +61,11 @@ airflow standalone
 ```
 
 📍 Access the UI at: [http://localhost:8080](http://localhost:8080)
+
+---
+
+![](ss/1.png)
+
+![](ss/2.png)
+
+![](ss/3.png)
