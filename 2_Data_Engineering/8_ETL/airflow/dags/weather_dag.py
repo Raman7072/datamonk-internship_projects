@@ -3,7 +3,7 @@ from datetime import datetime, timedelta
 import sys
 
 # Make ETL package discoverable
-sys.path.append("/home/kakarot/Desktop/VSCode/datamonk-internship_projects/2_Data_Engineering/8_ETL")
+sys.path.append("__/datamonk-internship_projects/2_Data_Engineering/8_ETL")
 
 from db import create_tables
 from extract import fetch_and_store_weather
