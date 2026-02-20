@@ -96,4 +96,10 @@ Uses **Open-Meteo Archive API** — completely free, no API key needed:
 
 ---
 
-*DataMonk Internship — Data Engineering Track | Project 9: Workflow Orchestration*
+![](ss/1.png)
+
+![](ss/2.png)
+
+![](ss/3.png)
+
+![](ss/4.png)
