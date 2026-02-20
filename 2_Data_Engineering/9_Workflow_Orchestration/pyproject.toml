@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dagster-quickstart"
+version = "0.1.0"
+description = "Weather Data Pipeline using Dagster — DataMonk Internship Project"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "dagster",
+    "dagster-webserver",
+    "requests",
+    "pandas",
+    "tabulate",          # for pandas .to_markdown()
+    "python-dotenv",
+]
+
+[project.optional-dependencies]
+dev = [
+    "dagster-webserver",
+    "pytest",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.dagster]
+module_name = "dagster_quickstart.definitions"
